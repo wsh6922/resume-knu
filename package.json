@@ -1,0 +1,19 @@
+{
+  "name": "resume",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "16.3.6",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.3.6"
+  }
+}
