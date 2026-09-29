@@ -43,6 +43,23 @@ export default class MyDocument extends Document {
       <Html lang="ko-KR">
         <Head>
           <meta charSet="utf-8" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, user-scalable=yes, maximum-scale=5"
+          />
+          <meta name="mobile-web-app-capable" content="yes" />
+          <meta name="apple-mobile-web-app-capable" content="yes" />
+          <link rel="preconnect" href="//fonts.googleapis.com" />
+          <link
+            rel="preconnect"
+            href="//fonts.gstatic.com"
+            crossOrigin="crossorigin"
+          />
+          {/* eslint-disable-next-line @next/next/no-css-tags */}
+          <link
+            rel="stylesheet"
+            href="//fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap"
+          />
         </Head>
         <body>
           <Main />

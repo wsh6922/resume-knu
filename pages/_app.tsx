@@ -16,3 +16,5 @@ const ResumeApp = ({ Component, pageProps }: AppProps) => {
     </>
   );
 };
+
+export default ResumeApp;
