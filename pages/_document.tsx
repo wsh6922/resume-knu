@@ -40,8 +40,10 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="ko">
-        <Head />
+      <Html lang="ko-KR">
+        <Head>
+          <meta charSet="utf-8" />
+        </Head>
         <body>
           <Main />
           <NextScript />
