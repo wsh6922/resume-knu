@@ -1,10 +1,12 @@
 import { NextPage } from "next";
-import Navigation from "../component/common/Navigation";
+import Page from "../component/common/Page";
+import Cv from "../component/common/Cv";
 
 const Resume: NextPage = () => {
   return (
     <>
-      <Navigation />
+      <Page />
+      <Cv />
     </>
   );
 };
