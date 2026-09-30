@@ -3,15 +3,22 @@ import { ITheme } from "./ITheme";
 
 
 const FontFamily = [
+    "Pretendard",
+    "Inter",
     "Noto Sans KR",
+    "Noto Sans JP",
+    "Noto Sans",
     "-apple-system",
     "BlinkMacSystemFont",
     "Segoe UI",
     "Roboto",
     "Helvetica Neue",
+    "Helvetica",
     "Arial",
-    "Noto Sans",
     "sans-serif",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
 ].map((font) => (font.includes(" ") ? `"${font}"` : font)).join(",");
 
 const MonospaceFontFamily = [

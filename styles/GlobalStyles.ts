@@ -13,8 +13,7 @@ const GlobalStyle = createGlobalStyle<{ theme: ITheme }>`
         overflow-x: hidden;
         font-family: ${({ theme }) => theme.fontFamily};
         font-weight: 400;
-        /* vmin: 뷰포트 가로, 세로 중 '작은 쪽'의 1% (1vmin = min(vw, vh)/100) */
-        font-size: calc(10px + 0.7vmin);
+        font-size: 14px;
         /* ch: 현재 폰트에서 '0' 한 글자의 가로 폭. -0.05ch = '0' 폭의 5%만큼 자간 좁힘 (폰트마다 실측값 다름) */
         letter-spacing: -0.05ch;
         font-display: swap;
@@ -23,6 +22,7 @@ const GlobalStyle = createGlobalStyle<{ theme: ITheme }>`
 
     body {
         width: 100%;
+        margin: 0px;
         overflow: hidden;
         line-height: 1.5;
         background: ${({ theme }) => theme.backgroundColor.toString()};
@@ -32,22 +32,16 @@ const GlobalStyle = createGlobalStyle<{ theme: ITheme }>`
         font-weight: 600;
     }
 
-    a:link, a:visited {
-        color: inherit;
-        text-decoration: none;
-        transition: background 0.3s ease;
-
-        &:hover {
-            text-decoration: underline solid 1px;
-        }
-    }
-
     sup {
         vertical-align: top;
         font-size: 0.6em;
     }
 
-
+    .tabler-icon {
+        width: 1.2em;
+        height: 1.2em;
+        vertical-align: middle;
+    }
 
     ::selection {
         color: ${({ theme }) => theme.textColorInverse.toString()};
